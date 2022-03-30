@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "233114311699",
+    "project_id": "maisha-task",
+    "storage_bucket": "maisha-task.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:233114311699:android:c046e14156a5b18110b3e6",
+        "android_client_info": {
+          "package_name": "in.premad.maisha_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "233114311699-6a2quo3imbsa9gb32ak9j7c3e6nae5nk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.premad.maisha_task",
+            "certificate_hash": "c6e43a73cbb95c8e18b13647d526131532ad10e3"
+          }
+        },
+        {
+          "client_id": "233114311699-3aeo1ha7fed990knk7371c4ar8rbd0hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOWQeBkyZlS6UItrTdcWD4Z5AwVnsQ1bA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "233114311699-3aeo1ha7fed990knk7371c4ar8rbd0hl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
