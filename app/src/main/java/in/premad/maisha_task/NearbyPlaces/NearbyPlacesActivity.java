@@ -127,7 +127,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
                 DataTransfer[0] = mMap;
                 DataTransfer[1] = url;
                 Log.d("onClick", url);
-                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
+                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData(NearbyPlacesActivity.this);
                 getNearbyPlacesData.execute(DataTransfer);
                 Toast.makeText(NearbyPlacesActivity.this,"Nearby Restaurants", Toast.LENGTH_LONG).show();
             }
@@ -145,7 +145,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
                 DataTransfer[0] = mMap;
                 DataTransfer[1] = url;
                 Log.d("onClick", url);
-                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
+                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData(NearbyPlacesActivity.this);
                 getNearbyPlacesData.execute(DataTransfer);
                 Toast.makeText(NearbyPlacesActivity.this,"Nearby Hospitals", Toast.LENGTH_LONG).show();
             }
@@ -166,7 +166,7 @@ public class NearbyPlacesActivity extends FragmentActivity implements OnMapReady
                 DataTransfer[0] = mMap;
                 DataTransfer[1] = url;
                 Log.d("onClick", url);
-                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
+                GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData(NearbyPlacesActivity.this);
                 getNearbyPlacesData.execute(DataTransfer);
                 Toast.makeText(NearbyPlacesActivity.this,"Nearby Schools", Toast.LENGTH_LONG).show();
             }
