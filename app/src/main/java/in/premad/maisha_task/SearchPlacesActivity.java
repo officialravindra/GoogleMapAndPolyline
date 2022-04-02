@@ -93,7 +93,7 @@ public class SearchPlacesActivity extends FragmentActivity implements OnMapReady
                 //txtView.setText(place.getName()+","+place.getId());
                // Log.i(TAG, "Place: " + place.getName() + ", " + place.getLatLng().latitude);
                 Log.i(TAG, "Place: " + place.getAddress() + ", " + place.getName());
-              
+
 
                 mMap.addMarker(new MarkerOptions().position(place.getLatLng()).title(place.getName()));
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(place.getLatLng()));

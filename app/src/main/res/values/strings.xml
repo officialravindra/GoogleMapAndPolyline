@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Maisha_Task</string>
+    <string name="app_name">OfficialRavindra</string>
+    <!-- string for showing the text "Forgot your login details-->
+    <string name="forgot"><b>Get help logging in.</b><font color='c4c4c4'>Forgot your login details? </font></string>
+
+    <!-- string to show the text " Dont have an account-->
+    <string name="sign_up"><b>Sign up.</b><font color='c4c4c4'>Dont have an account? </font></string>
+    <string name="facebook_app_id">550371996335439</string>
+    <string name="fb_login_protocol_scheme">fb[550371996335439]</string>
+
+
 </resources>
