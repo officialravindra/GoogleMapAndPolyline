@@ -1,0 +1,49 @@
+com/linkedin/platform/utils/Scope.java
+ com.linkedin.platform.utils.Scope
+ com.linkedin.platform.utils.Scope$LIPermission
+com/linkedin/android/mobilesdk/BuildConfig.java
+ com.linkedin.android.mobilesdk.BuildConfig
+com/linkedin/platform/listeners/ApiListener.java
+ com.linkedin.platform.listeners.ApiListener
+com/linkedin/platform/internals/BuildConfig.java
+ com.linkedin.platform.internals.BuildConfig
+com/linkedin/platform/DeepLinkHelper.java
+ com.linkedin.platform.DeepLinkHelper
+com/linkedin/platform/errors/ApiErrorResponse.java
+ com.linkedin.platform.errors.ApiErrorResponse
+com/linkedin/platform/errors/LIApiError.java
+ com.linkedin.platform.errors.LIApiError
+ com.linkedin.platform.errors.LIApiError$ErrorType
+com/linkedin/platform/errors/LIAuthError.java
+ com.linkedin.platform.errors.LIAuthError
+com/linkedin/platform/internals/QueueManager.java
+ com.linkedin.platform.internals.QueueManager
+com/linkedin/platform/listeners/AuthListener.java
+ com.linkedin.platform.listeners.AuthListener
+com/linkedin/platform/APIHelper.java
+ com.linkedin.platform.APIHelper
+ com.linkedin.platform.APIHelper$1
+ com.linkedin.platform.APIHelper$2
+ com.linkedin.platform.APIHelper$3
+com/linkedin/platform/LISession.java
+ com.linkedin.platform.LISession
+com/linkedin/platform/AccessToken.java
+ com.linkedin.platform.AccessToken
+com/linkedin/platform/internals/AppStore.java
+ com.linkedin.platform.internals.AppStore
+ com.linkedin.platform.internals.AppStore$1
+ com.linkedin.platform.internals.AppStore$2
+ com.linkedin.platform.internals.AppStore$SupportedAppStore
+com/linkedin/platform/LISessionManager.java
+ com.linkedin.platform.LISessionManager
+ com.linkedin.platform.LISessionManager$LISessionImpl
+com/linkedin/platform/listeners/ApiResponse.java
+ com.linkedin.platform.listeners.ApiResponse
+com/linkedin/platform/errors/LIDeepLinkError.java
+ com.linkedin.platform.errors.LIDeepLinkError
+com/linkedin/platform/listeners/DeepLinkListener.java
+ com.linkedin.platform.listeners.DeepLinkListener
+com/linkedin/platform/errors/LIAppErrorCode.java
+ com.linkedin.platform.errors.LIAppErrorCode
+com/linkedin/platform/internals/LIAppVersion.java
+ com.linkedin.platform.internals.LIAppVersion

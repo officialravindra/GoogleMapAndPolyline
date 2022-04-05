@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Relative layout as parent layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:text="INSTAGRAM LOGIN" />
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+&lt;!&ndash; Relative layout as parent layout&ndash;&gt;
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,9 +46,9 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <!-- Text view to display the
+    &lt;!&ndash; Text view to display the
         text "English (India)" at
-        uppermost part of the page-->
+        uppermost part of the page&ndash;&gt;
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,8 +60,8 @@
         android:layout_centerHorizontal="true"
         android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"/>
 
-    <!-- Linear layout to contain all the
-        editText, password , logo and button-->
+    &lt;!&ndash; Linear layout to contain all the
+        editText, password , logo and button&ndash;&gt;
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,16 +71,16 @@
         android:paddingEnd="28dp"
         android:layout_centerInParent="true">
 
-        <!-- Imageview displaying the logo
-                or name of the application-->
+        &lt;!&ndash; Imageview displaying the logo
+                or name of the application&ndash;&gt;
         <ImageView
             android:layout_width="147dp"
             android:layout_height="82dp"
             android:adjustViewBounds="true"
             android:src="@drawable/logo" />
 
-        <!-- Edit text provided to user to
-            enter email, username or phone no.-->
+        &lt;!&ndash; Edit text provided to user to
+            enter email, username or phone no.&ndash;&gt;
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,8 +92,8 @@
             android:hint="Phone number, email or username"
             android:background="@drawable/background_edit_text"/>
 
-        <!-- Edit text provided to write
-            password (according to instagram UI)-->
+        &lt;!&ndash; Edit text provided to write
+            password (according to instagram UI)&ndash;&gt;
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,7 +107,7 @@
             android:background="@drawable/background_edit_text"
             android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"/>
 
-        <!-- material button is used to display the "Login" button to user-->
+        &lt;!&ndash; material button is used to display the "Login" button to user&ndash;&gt;
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,12 +115,14 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:padding="12dp"
+            android:onClick="onClick"
+            android:id="@+id/btn_login"
             android:layout_marginTop="18dp"
             android:backgroundTint="#3897f0"
             app:cornerRadius="4dp"/>
 
-        <!-- Text view displaying the text
-                "Forgot your login details?"-->
+        &lt;!&ndash; Text view displaying the text
+                "Forgot your login details?"&ndash;&gt;
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,8 +131,8 @@
             android:textSize="12sp"
             android:layout_marginTop="8dp"/>
 
-        <!-- Linear layout to display the message
-            OR using view so that it can be shown separately-->
+        &lt;!&ndash; Linear layout to display the message
+            OR using view so that it can be shown separately&ndash;&gt;
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,15 +140,15 @@
             android:layout_marginTop="12sp"
             android:layout_gravity="center_vertical">
 
-            <!-- to occupy the rectangular area in left side
-                so that message can be displayed in center-->
+            &lt;!&ndash; to occupy the rectangular area in left side
+                so that message can be displayed in center&ndash;&gt;
             <View
                 android:layout_width="0dp"
                 android:layout_height="1.5dp"
                 android:layout_weight="1"
                 android:background="#e2e2e2"/>
 
-            <!-- textview displaying the message "OR"-->
+            &lt;!&ndash; textview displaying the message "OR"&ndash;&gt;
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -120,8 +159,8 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"/>
 
-            <!-- to occupy the rectangular area in right
-                side so that message can be displayed in center-->
+            &lt;!&ndash; to occupy the rectangular area in right
+                side so that message can be displayed in center&ndash;&gt;
             <View
                 android:layout_width="0dp"
                 android:layout_height="1.5dp"
@@ -130,8 +169,8 @@
 
         </LinearLayout>
 
-        <!-- text view to display the
-            message "Log in with Facebook-->
+        &lt;!&ndash; text view to display the
+            message "Log in with Facebook&ndash;&gt;
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -150,8 +189,8 @@
         android:background="#e2e2e2"
         android:layout_marginBottom="8dp"/>
 
-    <!-- text view to show the message
-        "Dont have an account?Sign up-->
+    &lt;!&ndash; text view to show the message
+        "Dont have an account?Sign up&ndash;&gt;
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -164,4 +203,4 @@
         android:layout_alignParentBottom="true"
         android:gravity="center_horizontal" />
 
-</RelativeLayout>
+</RelativeLayout>-->

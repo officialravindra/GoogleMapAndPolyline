@@ -77,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
         defaultSignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                doSignInSignOut();
+                doGoogleSignIn();
+                /*doSignInSignOut()*/;
             }
         });
 
@@ -125,12 +126,12 @@ public class MainActivity extends AppCompatActivity {
 
         //get the last sign in account
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
-
+        doGoogleSignIn();
         //if account doesn't exist do login else do sign out
-        if (account == null)
+      /*  if (account == null)
             doGoogleSignIn();
         else
-            doGoogleSignOut();
+            doGoogleSignOut();*/
     }
 
     /**
@@ -380,6 +381,8 @@ public class MainActivity extends AppCompatActivity {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
             //show toast
+
+
             Toast.makeText(this, "Google Sign In Successful.", Toast.LENGTH_SHORT).show();
             getProfileInformation(account);
 

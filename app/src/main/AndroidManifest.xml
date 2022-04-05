@@ -9,18 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Maisha_Task">
-        <activity android:name=".SocialLogins.LinkedInLoginActivity"></activity>
+        <activity android:name=".SocialLogins.LinkedIn.LinkedInProfileActivity"></activity>
+        <activity android:name=".SocialLogins.LinkedIn.LinkedInLoginActivity" />
         <activity
             android:name=".SocialLogins.FacebookLoginActivity"
             android:configChanges="keyboard|keyboardHidden             |screenLayout|screenSize             |orientation"
-            android:label="@string/app_name">
+            android:label="@string/app_name"></activity>
+        <activity android:name=".SocialLogins.Instagram.InstaLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SocialLogins.InstaLoginActivity"></activity>
         <activity android:name=".NearbyPlacesList.NearByPlacesListActivity" />
         <activity android:name=".NearbyPlaces.NearbyPlacesActivity" />
         <activity android:name=".Routes.RouteActivity" />
