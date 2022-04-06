@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Video.PickUpVideo">
+
+
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/pickup"
+        android:text="Pick Up Video"
+        >
+
+    </Button>
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

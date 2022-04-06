@@ -7,7 +7,7 @@
     <string name="sign_up"><b>Sign up.</b><font color='c4c4c4'>Dont have an account? </font></string>
     <string name="facebook_app_id">550371996335439</string>
     <string name="fb_login_protocol_scheme">fb[550371996335439]</string>
-    <string name="client_id">1602073646838646</string>
+    <string name="client_id">1164293644380438</string>
     <string name="callback_url">https://instagram.com/</string>
 
     <string name="redirect_url">https://instagram.com/</string>
