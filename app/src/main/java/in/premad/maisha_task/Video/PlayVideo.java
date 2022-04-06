@@ -49,12 +49,12 @@ public class PlayVideo extends AppCompatActivity {
         exoPlayerView = findViewById(R.id.idExoPlayerVIew);
         pickup = findViewById(R.id.pickup);
 
-        /*Intent intent = getIntent();
+        Intent intent = getIntent();
         path = intent.getStringExtra("path");
-        Log.d("TAG", "play screen" + path);*/
+        Log.d("TAG", "play screen" + path);
 
 
-        pickup.setOnClickListener(new View.OnClickListener() {
+     /*   pickup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent();
@@ -63,12 +63,73 @@ public class PlayVideo extends AppCompatActivity {
                 startActivityForResult(Intent.createChooser(intent1, "Select Video"), REQUEST_TAKE_GALLERY_VIDEO);
 
             }
-        });
+        });*/
+
+        loadVideo(path);
+
+
+
+
+    }
+
+    void loadVideo(String path)
+    {
+        try {
+
+            // bandwisthmeter is used for
+            // getting default bandwidth
+            BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
+
+            // track selector is used to navigate between
+            // video using a default seekbar.
+            TrackSelector trackSelector = new DefaultTrackSelector(new AdaptiveTrackSelection.Factory(bandwidthMeter));
+
+            // we are adding our track selector to exoplayer.
+            exoPlayer = ExoPlayerFactory.newSimpleInstance(this, trackSelector);
+
+
+            // we are parsing a video url
+            // and parsing its video uri.
+            Uri videouri = Uri.parse(path);
 
 
 
 
 
+            // we are creating a variable for datasource factory
+            // and setting its user agent as 'exoplayer_view'
+            DefaultHttpDataSourceFactory dataSourceFactory = new DefaultHttpDataSourceFactory("exoplayer_video");
+
+            // we are creating a variable for extractor factory
+            // and setting it to default extractor factory.
+            ExtractorsFactory extractorsFactory = new DefaultExtractorsFactory();
+
+            // we are creating a media source with above variables
+            // and passing our event handler as null,
+            //MediaSource mediaSource = new ExtractorMediaSource(selectedImageUri, dataSourceFactory, extractorsFactory, null, null);
+            MediaSource mediaSource = new  ExtractorMediaSource(videouri,
+                    new DefaultDataSourceFactory(PlayVideo.this,"exoplayer_video"),
+                    new DefaultExtractorsFactory(),null,null);
+
+
+
+            // inside our exoplayer view
+            // we are setting our player
+            exoPlayerView.setPlayer(exoPlayer);
+
+            // we are preparing our exoplayer
+            // with media source.
+            exoPlayer.prepare(mediaSource);
+
+            // we are setting our exoplayer
+            // when it is ready.
+            exoPlayer.setPlayWhenReady(true);
+
+        } catch (Exception e) {
+            // below line is used for
+            // handling our errors.
+            Log.e("TAG", "Error : " + e.toString());
+        }
     }
 
 
