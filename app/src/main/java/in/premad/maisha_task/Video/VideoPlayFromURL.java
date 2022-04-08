@@ -18,6 +18,7 @@ import com.google.android.exoplayer2.trackselection.TrackSelector;
 import com.google.android.exoplayer2.ui.SimpleExoPlayerView;
 import com.google.android.exoplayer2.upstream.BandwidthMeter;
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
+import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
 
 import in.premad.maisha_task.R;
@@ -65,7 +66,12 @@ public class VideoPlayFromURL extends AppCompatActivity {
 
             // we are creating a media source with above variables
             // and passing our event handler as null,
-            MediaSource mediaSource = new ExtractorMediaSource(videouri, dataSourceFactory, extractorsFactory, null, null);
+           // MediaSource mediaSource = new ExtractorMediaSource(videouri, dataSourceFactory, extractorsFactory, null, null);
+
+            MediaSource mediaSource = new  ExtractorMediaSource(videouri,
+                    new DefaultDataSourceFactory(VideoPlayFromURL.this,"exoplayer_video"),
+                    new DefaultExtractorsFactory(),null,null);
+
 
             // inside our exoplayer view
             // we are setting our player
